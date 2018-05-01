@@ -51,6 +51,16 @@ public class TestBuffer {
 
 
     @Test
+    public void test03(){
+
+        //分配直接缓冲区
+        ByteBuffer buf = ByteBuffer.allocateDirect(1024);
+
+        System.out.println(buf.isDirect());
+    }
+
+
+    @Test
     public void test02(){
         String str = "abcde";
         ByteBuffer buf = ByteBuffer.allocate(1024);
